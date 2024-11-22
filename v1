@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Același CSS ca în versiunea cu layout-ul bun */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: 
+                radial-gradient(circle at top left, rgba(37, 99, 235, 0.1), transparent 40%),
+                radial-gradient(circle at bottom right, rgba(124, 58, 237, 0.1), transparent 40%),
+                #ffffff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(to right, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+        }
+
+        .header p {
+            color: #64748b;
+            font-size: 18px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .icon-wrapper {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a365d;
+        }
+
+        .card-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-list li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 0;
+            color: #4a5568;
+        }
+
+        .conclusion {
+            grid-column: 1 / -1;
+            background: linear-gradient(to right, #f8fafc, #eef2ff);
+        }
+
+        .conclusion p {
+            margin-top: 16px;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Discursul Juridic</h1>
+            <p>Analiză și Sinteză - Hotărârea CCR nr.2/2024</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-wrapper">⚖️</div>
+                    <div class="card-title">Caracteristici Principale</div>
+                </div>
+                <ul class="card-list">
+                    <li><span>▶️</span> Obiectivitate și Imparțialitate</li>
+                    <li><span>▶️</span> Precizie în Argumentare</li>
+                    <li><span>▶️</span> Rigoare Științifică</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-wrapper">📋</div>
+                    <div class="card-title">Structură</div>
+                </div>
+                <ul class="card-list">
+                    <li><span>▶️</span> Introducere - Context Juridic</li>
+                    <li><span>▶️</span> Argumentație Legislativă</li>
+                    <li><span>▶️</span> Concluzie Motivată</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-wrapper">📢</div>
+                    <div class="card-title">Limbaj</div>
+                </div>
+                <ul class="card-list">
+                    <li><span>▶️</span> Terminologie Specializată</li>
+                    <li><span>▶️</span> Expresii Tehnice</li>
+                    <li><span>▶️</span> Referințe Legislative</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-wrapper">⚡</div>
+                    <div class="card-title">Aplicabilitate</div>
+                </div>
+                <ul class="card-list">
+                    <li><span>▶️</span> Interpretare Normativă</li>
+                    <li><span>▶️</span> Fundamentare Decizii</li>
+                    <li><span>▶️</span> Practică Judiciară</li>
+                </ul>
+            </div>
+
+            <div class="card conclusion">
+                <div class="card-header">
+                    <div class="icon-wrapper">📜</div>
+                    <div class="card-title">Concluzie</div>
+                </div>
+                <p>
+                    Discursul juridic reprezintă o formă specializată de comunicare care îmbină 
+                    precizia terminologică cu argumentarea riguroasă, servind scopului de interpretare 
+                    și aplicare a normelor juridice într-un cadru instituțional specific.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
